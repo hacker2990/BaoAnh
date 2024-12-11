@@ -5,9 +5,9 @@
 [Script]
 # ~ By BaoAnh
 # ～ Egern transfer to Shadowrocket & Surge & LanceX
-revenuecat = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[^/]+$), script-path=https://github.com/hacker2990/BaoAnh/blob/hacker2990-patch-1/locket, requires-body=true, max-size=-1, timeout=60
+revenuecat = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[^/]+$), script-path=https://raw.githubusercontent.com/hacker2990/BaoAnh/refs/heads/hacker2990-patch-1/locket, requires-body=true, max-size=-1, timeout=60
 
-deleteHeader = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers), script-path=https://github.com/hacker2990/BaoAnh/blob/hacker2990-patch-1/Delect, timeout=60
+deleteHeader = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers), script-path=https://raw.githubusercontent.com/hacker2990/BaoAnh/refs/heads/hacker2990-patch-1/Delect, timeout=60
 
 [MITM]
 hostname = %APPEND% api.revenuecat.com
